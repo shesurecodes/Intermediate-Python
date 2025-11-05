@@ -1,0 +1,63 @@
+# column access
+# example code
+# brics[["country", "capital"]]
+
+#row access
+#brics[1:4]
+
+# # Import cars data
+# import pandas as pd
+# cars = pd.read_csv('cars.csv', index_col = 0)
+
+# # Print out country column as Pandas Series
+# print(cars['country'])
+
+# # Print out country column as Pandas DataFrame
+# print(cars[['country']])
+
+# # Print out DataFrame with country and drives_right columns
+# print(cars[["country", "drives_right"]])
+
+#square brackets 2
+# # Import cars data
+# import pandas as pd
+# cars = pd.read_csv('cars.csv', index_col = 0)
+
+# # Print out first 3 observations
+# print(cars[0:3])
+
+# # Print out fourth, fifth and sixth observation
+# print(cars[3:6])
+
+# discussion
+# square brackets provide limited functionality
+# Ideally
+# 2D numpy arrays
+# my_array[rows, columns]
+
+# pandas
+#loc (label-based)
+#iloc (integer position-based)
+
+#locs
+# brics.loc["RU"]
+
+
+# multiple rows
+# brics.loc[["RU", "IN", "CH"]]
+
+# row and column loc
+# brics.loc[["RU", "IN", "CH"],["country", "capital"]]
+
+# entire rows but select columns
+# brics.loc[:],["country", "capital"]]
+
+#iloc
+# row-access iloc
+# brics.iloc[[1]]
+
+# row and column iloc
+# brics.iloc[[1, 2, 3], [0,1]]
+
+# row and column iloc
+# brics.iloc[:, [0,1]]
